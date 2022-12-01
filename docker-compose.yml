@@ -1,7 +1,8 @@
 services:
     sql-server-db:
       container_name: mssqlserver
-      image: mcr.microsoft.com/azure-sql-edge:latest
+      #image: mcr.microsoft.com/azure-sql-edge:latest
+      image: mcr.microsoft.com/mssql/server:2019-latest
       user: root
       ports:
         - "1433:1433"
